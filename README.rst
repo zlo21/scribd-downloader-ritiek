@@ -1,10 +1,13 @@
 Scribd-Downloader
 =================
 
+
+( From https://github.com/ritiek )
+
+( Updated installation information )
+
 |PyPi Version| |Build Status| |Coverage Status|
 
-(I also found an online service https://dlscrib.com/ created by `Erik Fong`_. It doesn't
-use this script as some people seem to think!).
 
 Current features:
 
@@ -41,18 +44,24 @@ This script takes a different approach to both of them:
 Installation
 ------------
 
-Make sure you're using Python 3 (Python 2 is not supported by a few dependencies).
+Make sure you're using Python 3.7 and above.
 Then run these commands:
 
-::
-
-    $ pip install scribd-downloader
-
-or install the development version with:
+Clone the repo and install with:
 
 ::
 
     $ python setup.py install
+
+Windows users will require GTK+ libraries.
+The tutorial can be found at https://weasyprint.readthedocs.io/en/stable/install.html#step-4-install-the-gtk-libraries
+
+Windows users may also need to set Python to use UTF8 for certain books by setting the ``PYTHONUTF8`` environment variable.
+
+::
+
+    $ SET PYTHONUTF8=1
+
 
 -----
 Usage
@@ -166,6 +175,5 @@ License
 
 .. _Mitmproxy: https://github.com/mitmproxy/mitmproxy
 
-.. _Erik Fong: mailto:dlscrib@gmail.com
 .. _BookURL: https://www.scribd.com/read/189087235/Confessions-of-a-Casting-Director-Help-Actors-Land-Any-Role-with-Secrets-from-Inside-the-Audition-Room
 .. ConstantValues:
